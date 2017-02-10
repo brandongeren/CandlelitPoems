@@ -1,0 +1,17 @@
+{{outlet}}
+<h2>Poems</h2>
+
+<ul>
+	{{#each model as |poem|}}
+		<article class="listing">
+			<h3>{{poem.title}}</h3>
+			<div class="author">
+				<span>by </span> {{poem.author}}
+			</div>
+			<div class="body">
+				{{poem.body}}
+			</div>	
+		</article>
+
+	{{/each}}
+</ul>
