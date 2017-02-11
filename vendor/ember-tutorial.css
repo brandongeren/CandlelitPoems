@@ -61,9 +61,16 @@ p {
  * Body Container
  */
 .container {
-    max-width: 1024px;
-    min-height: 100vh;
-    background: #f9f9f9;
+/*    max-width: 1024px;
+*/    min-height: 100vh;
+    background: #ffe8ac;
+    background: -webkit-linear-gradient(#ffe8ac, #ffd052);
+    background:    -moz-linear-gradient(#ffe8ac, #ffd052);
+    background:         linear-gradient(#ffe8ac, #ffd052);
+/*    background: -webkit-linear-gradient(#ffd052, #ffe8ac);
+    background:    -moz-linear-gradient(#ffd052, #ffe8ac);
+    background:         linear-gradient(#ffd052, #ffe8ac);
+*/
     margin: 0 auto;
 }
 
@@ -74,12 +81,12 @@ p {
     height: 4em;
     background-color: #677ae4;
     background-color: #05526A;
-    background-color: #e46855;
+    background-color: #e85a28;
 }
 
 .menu h1 {
     padding: 7px 0 0 20px;
-    color: #f9f9f9;
+    color: #f6f6f6;
     font-size: 2.1em;
 }
 
@@ -92,7 +99,7 @@ p {
     text-decoration: none;
     line-height: 1;
     padding: 15px;
-    color: #f9f9f9;
+    color: #f6f6f6;
     opacity: 0.85;
 }
 
@@ -116,7 +123,7 @@ p {
 }
 
 .menu input:focus {
-    background-color: #f9f9f9;
+    background-color: #f6f6f6;
     outline: none;
 }
 
@@ -169,7 +176,8 @@ p {
  */
 .jumbo {
     padding: 50px;
-    background: #f6f6f6;
+    background: #ffffff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .jumbo:hover {
@@ -197,10 +205,11 @@ p {
  */
 .listing {
     margin-top: 15px;
-    background-color: #f6f6f6;
+    background-color: #ffffff;
     padding: 15px 50px;
     min-height: 145px;
     position: relative;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .listing:hover {
@@ -318,9 +327,64 @@ p {
 }
 
 .tomster {
-    background: url(http://emberjs.com/images/tomsters/teaching.png);
+    background: url(https://img.clipartfox.com/4163f19fc9489efd542764992ba59850_christmas-candle-clip-art-baptism-candle-clip-art_800-800.png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 200px;
     width: 200px;
+}
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Helvetica", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Helvetica", sans-serif;
+  outline: 0;
+  background: #e85a28;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #ee622f;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #e85a28;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
 }

@@ -1,1 +1,16 @@
 {{outlet}}
+
+<div class="login-page">
+  <div class="form">
+    <form class="login-form" {{action 'authenticate' on='submit'}}>
+  		{{input id='email' placeholder='email' value=email}}
+  		{{input id='password' placeholder='password' type='password' value=password}}
+  		<button type="submit">login</button>
+  		{{#if errorMessage}}
+  		  <p>{{errorMessage}}</p>
+  		{{/if}}
+    </form>
+  </div>
+</div>
+
+

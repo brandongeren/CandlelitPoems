@@ -10,9 +10,18 @@ Ember.MODEL_FACTORY_INJECTIONS = true;
 App = Ember.Application.extend({
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
-  Resolver
+  session: Ember.inject.service('session'),
+  Resolver,
+
+  actions: {
+    invalidateSession() {
+      this.get('session').invalidate();
+    }
+  }
+
 });
 
 loadInitializers(App, config.modulePrefix);
 
 export default App;
+
