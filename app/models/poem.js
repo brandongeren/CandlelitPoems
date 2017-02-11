@@ -5,5 +5,5 @@ export default DS.Model.extend({
 	title: DS.attr(),
 	author: DS.attr(),
 	dateSubmitted: DS.attr(),
-	text: DS.attr(),
+	text: DS.attr()
 });
